@@ -14,7 +14,7 @@ from email.utils import formataddr
 from email.mime.text import MIMEText
 
 import requests
-from requests.packages.urllib3.exceptionsimport InsecureRequestWarning
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
  
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
