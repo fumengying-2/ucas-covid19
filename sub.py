@@ -13,6 +13,11 @@ from datetime import datetime
 from email.utils import formataddr
 from email.mime.text import MIMEText
 
+import requests
+from requests.packages.urllib3.exceptionsimport InsecureRequestWarning
+ 
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+
 # 开启debug将会输出打卡填报的数据，关闭debug只会输出打卡成功或者失败，如果使用github actions，请务必设置该选项为False
 debug = False
 
